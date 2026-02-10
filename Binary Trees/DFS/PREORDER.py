@@ -1,6 +1,6 @@
 class Node:
-    def __init__(self,root):
-        self.root = root
+    def __init__(self,data):
+        self.data = data
         self.right = None
         self.left = None
 
@@ -16,7 +16,7 @@ secondNode.left = fourthNode
 def PreOrderSearch(node):
     if node is None:
         return
-    print(node.root,end=",")
+    print(node.data,end=",")
     PreOrderSearch(node.left)
     PreOrderSearch(node.right)
 obj = PreOrderSearch(firstNode)
