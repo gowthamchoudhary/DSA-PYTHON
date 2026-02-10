@@ -11,4 +11,4 @@ def binary_search_conditional(arr):
             mid = left
     return mid
 arr = ['True','True','True','True','False','False','False']
-print(binary_search_conditional(arr))
+print(binary_search_conditional(arr)) 
