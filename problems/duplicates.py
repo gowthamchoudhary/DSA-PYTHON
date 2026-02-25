@@ -7,14 +7,12 @@
 # Output: true
 
 
-nums = [1,2,3,5,7]
+nums = [1,2,3,5,1]
 def duplicates(arr):
-    seen = []
-    for i in arr:
-        if not i in seen:
-            seen.append(i)
-        else:
-            return False
-    return True
+    nums_doop = set(arr)
+    if len(arr)==len(nums_doop):
+        return True
+    else:
+        return False
 print(duplicates(nums))
 
