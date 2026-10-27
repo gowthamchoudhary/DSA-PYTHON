@@ -23,4 +23,6 @@ def heapSort(arr):
         new_list[i] = min
     return new_list
 print(heapSort([1, 3, 5, 7, 9, 2, 4, 6, 8, 0]))
+#Heap Push Pop:Time O(log n)
+heapq.heappushpop(A,99)
 print(A)
