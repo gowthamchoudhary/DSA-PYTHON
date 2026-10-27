@@ -13,12 +13,12 @@ fourthNode = Node(5)
 firstNode.right = thirdNode
 firstNode.left = secondNode
 secondNode.left = fourthNode
-def PreOrderSearch(node):
+def PreOrderTraversal(node):
     if node is None:
         return
     print(node.data,end=",")
-    PreOrderSearch(node.left)
-    PreOrderSearch(node.right)
-obj = PreOrderSearch(firstNode)
+    PreOrderTraversal(node.left)
+    PreOrderTraversal(node.right)
+obj = PreOrderTraversal(firstNode)
 
 
